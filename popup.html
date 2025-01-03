@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup-header">
+        <img src="./logos/autobound-logo.png" width="100" />
+      </div>
+      <div class="popup-settings">
+        <h3 class="popup__heading">
+          Settings for
+
+          <!-- Domain is injected dynamically -->
+          <span class="domain"></span>
+        </h3>
+
+        <div class="popup-row">
+          <div class="popup-row__name-container">
+            <span class="popup-row__name">
+              Enable for
+
+              <!-- Domain is injected dynamically -->
+              <span class="domain"></span>
+            </span>
+
+            <span class="popup-row__hint">
+              Please refresh the page to see the changes take effect.
+            </span>
+          </div>
+
+          <div class="domain-toggle">
+            <input
+              type="checkbox"
+              class="domain-toggle__input"
+              id="domain-toggle"
+            />
+            <label for="domain-toggle" class="domain-toggle__label"></label>
+          </div>
+        </div>
+      </div>
+      <div class="popup-links">
+        <h3 class="popup__heading">Open web version</h3>
+
+        <a
+          href="https://app2.autobound.ai/list-builder"
+          target="_blank"
+          class="popup-row"
+        >
+          <div class="popup-row__inner">
+            <div class="popup-row__icon-container">
+              <img
+                class="popup-row__icon"
+                src="./icons/search.svg"
+                width="17"
+              />
+            </div>
+
+            <span class="popup-row__name">
+              List Builder: Search & Export Contacts
+            </span>
+          </div>
+
+          <img src="./icons/launch.svg" width="15" />
+        </a>
+
+        <a
+          class="popup-row"
+          href="https://app2.autobound.ai/generate-content/bulk-content"
+          target="_blank"
+        >
+          <div class="popup-row__inner">
+            <div class="popup-row__icon-container">
+              <img class="popup-row__icon" src="./icons/write.svg" width="17" />
+            </div>
+
+            <span class="popup-row__name">
+              Bulk Content: Write 1,0000s of Emails at Once
+            </span>
+          </div>
+
+          <img src="./icons/launch.svg" width="15" />
+        </a>
+
+        <a
+          href="https://www.autobound.ai/post/how-autobound-works"
+          target="_blank"
+          class="popup-row"
+        >
+          <div class="popup-row__inner">
+            <div class="popup-row__icon-container">
+              <img
+                class="popup-row__icon"
+                src="./icons/question.svg"
+                width="14"
+              />
+            </div>
+
+            <span class="popup-row__name"> Autobound Product Guide </span>
+          </div>
+
+          <img src="./icons/launch.svg" width="15" />
+        </a>
+
+        <a href="mailto:support@autobound.ai" target="_blank" class="popup-row">
+          <div class="popup-row__inner">
+            <div class="popup-row__icon-container">
+              <img class="popup-row__icon" src="./icons/mail.svg" width="17" />
+            </div>
+
+            <span class="popup-row__name"> Contact us </span>
+          </div>
+
+          <img src="./icons/launch.svg" width="15" />
+        </a>
+      </div>
+      <div class="popup-footer">
+        <button class="popup__main-btn" id="anywhere-trigger">
+          Open Autobound for Chrome
+        </button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
